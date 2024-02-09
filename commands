@@ -4,7 +4,10 @@ sudo apt install apache2
 
 systemctl status apache2
 
-SPECIFY THE DIR WHERE THE KEY AND CSR FILE TO BE CREATED
+DPECIFY THE DIRECTORY WHERE YOU WANT TO STORE YOUR KEY AND CSR FILE WILL THEY WILL BE CREATED
+
 sudo openssl req -new -newkey rsa:2048 -nodes -keyout /etc/ecr/server.key -out /etc/ecr/server.csr
 
-cat /etc/ecr/server.csr
+CHECK YOUR .CSR FILE WITH CAT COMMAND AND COPY THE PRIVATE KEY CONATINS
+
+cat server.csr
