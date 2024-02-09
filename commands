@@ -1,0 +1,10 @@
+sudo apt update
+
+sudo apt install apache2
+
+systemctl status apache2
+
+SPECIFY THE DIR WHERE THE KEY AND CSR FILE TO BE CREATED
+sudo openssl req -new -newkey rsa:2048 -nodes -keyout /etc/ecr/server.key -out /etc/ecr/server.csr
+
+cat /etc/ecr/server.csr
