@@ -1,0 +1,21 @@
+We need to identify which service is running on port number 80 
+By typing the command 
+
+sudo lsof -i :80
+
+  CHANGING PORT NUMBER
+
+ sudo nano /etc/apache2/ports.conf
+
+  CHANGING VIRTUAL FILE PORT NUMBER FROM 80 TO 8081
+
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+
+systemctl restart apache2
+
+TO FIND THE LOGS OF APACHE PIORT
+
+Cd /var/log/apache2/
+
+sudo tail /var/log/apache2/error.log
+  
